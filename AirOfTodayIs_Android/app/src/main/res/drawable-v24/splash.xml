@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@android:color/holo_orange_light" />
+    <item android:drawable="@android:color/white" />
     <item
         android:id="@+id/list_item_splash"
-        android:top="8dp"
-        android:bottom="8dp"
-        android:left="8dp"
-        android:right="8dp"
+        android:top="2000dp"
+        android:bottom="2000dp"
+        android:left="2000dp"
+        android:right="2000dp"
         >
         <bitmap
-            android:src="@drawable/ic_launcher"
+            android:src="@drawable/aira"
             android:gravity="center"
            />
     </item>
