@@ -1,0 +1,2 @@
+rootProject.name='jsonAccept'
+include ':app'
