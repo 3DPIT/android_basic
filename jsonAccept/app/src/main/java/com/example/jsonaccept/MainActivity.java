@@ -25,8 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView textView = (TextView) findViewById(R.id.pas);
-        String resultText = "값이없음";
-
+        String resultText = "NULL";
         try {
             resultText = new Task().execute().get();
         } catch (InterruptedException e) {
@@ -34,18 +33,18 @@ public class MainActivity extends AppCompatActivity {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-
         textView.setText(resultText);
     }
     public class Task extends AsyncTask<String, Void, String> {
 
-      //  String clientKey = "#########################";
+      //  String clientKey = " ";
 
         private String str, receiveMsg;
-        private final String ID = "########";
+        private final String ID = " ";
         @Override
         protected String doInBackground(String... params) {
             URL url = null;
+
             try {
                 String lat = "35.123";
                 String lng ="127.123";
