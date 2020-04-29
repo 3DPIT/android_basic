@@ -36,9 +36,6 @@ public class MainActivity extends AppCompatActivity {
         String ultraFindDust = null;
         String No2 = null;
         String No = null;
-        Log.d("findDust","findDust");
-
-        String[] arraysum = new String[8];
         String resultText = "NULL";
         try {
             resultText = new Task().execute().get();
